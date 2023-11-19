@@ -23,8 +23,8 @@
 function getStringLength(value) {
   if (typeof value === 'string') {
     return value.length;
-  } else {
-    return 0;
+  }else {
+    return 0; 
   }
 }
 
@@ -46,11 +46,9 @@ function isString(value) {
   if (typeof value === 'string' || value instanceof String) {
     return true;
   } else {
-    return 0;
+    return false; 
   }
-}
-
-/**
+}/**
  * Returns the result of concatenation of two strings.
  *
  * @param {string} value1 - The first string to concatenate.
