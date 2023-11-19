@@ -88,13 +88,11 @@ function getFirstChar(value) {
  *   removeLeadingAndTrailingWhitespaces('cat ') => 'cat'
  *   removeLeadingAndTrailingWhitespaces('\t\t\tHello, World! ') => 'Hello, World!'
  */
-function removeLeadingWhitespaces(value) {
+function removeLeadingAndTrailingWhitespaces(value) {
   return value.trimStart();
-}
-
-function removeTrailingWhitespaces(value) {
   return value.trimEnd();
 }
+
 
 
 /**
