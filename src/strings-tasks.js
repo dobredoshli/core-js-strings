@@ -23,8 +23,8 @@
 function getStringLength(value) {
   if (typeof value === 'string') {
     return value.length;
-  }else {
-    return 0; 
+  } else {
+    return 0;
   }
 }
 
@@ -43,12 +43,9 @@ function getStringLength(value) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  if (typeof value === 'string' || value instanceof String) {
-    return true;
-  } else {
-    return false; 
-  }
-}/**
+  return typeof value === 'string' || value instanceof String;
+}
+/**
  * Returns the result of concatenation of two strings.
  *
  * @param {string} value1 - The first string to concatenate.
@@ -61,7 +58,7 @@ function isString(value) {
  *   concatenateStrings('', 'bb') => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  return value1 + value2;
+  return `${value1}${value2}`;
 }
 
 /**
@@ -78,6 +75,7 @@ function concatenateStrings(value1, value2) {
 function getFirstChar(value) {
   return value.charAt(0);
 }
+
 
 /**
  * Removes leading and trailing whitespace characters from the string.
