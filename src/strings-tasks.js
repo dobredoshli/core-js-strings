@@ -90,7 +90,6 @@ function getFirstChar(value) {
  */
 function removeLeadingAndTrailingWhitespaces(value) {
   return value.trimStart();
-  return value.trimEnd();
 }
 
 
