@@ -23,9 +23,8 @@
 function getStringLength(value) {
   if (typeof value === 'string') {
     return value.length;
-  } else {
-    return 0;
   }
+  return 0;
 }
 
 /**
