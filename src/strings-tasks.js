@@ -90,8 +90,6 @@ function removeLeadingAndTrailingWhitespaces(value) {
   return value.trimStart();
 }
 
-
-
 /**
  * Removes only leading whitespace characters from the string.
  *
